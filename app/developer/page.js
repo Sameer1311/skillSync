@@ -56,7 +56,7 @@ const Developer = () => {
 
         {/* Introduction */}
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-          Hello! I'm <span className="font-semibold text-primary">Sameer Negi</span>, a passionate Full-Stack Developer who loves building modern, efficient, and user-friendly web applications. I thrive in solving complex problems and designing elegant, scalable solutions.
+          Hello! {"I'm"} <span className="font-semibold text-primary">Sameer Negi</span>, a passionate Full-Stack Developer who loves building modern, efficient, and user-friendly web applications. I thrive in solving complex problems and designing elegant, scalable solutions.
         </p>
 
         {/* Skills & What I Do Section */}
