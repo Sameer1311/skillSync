@@ -9,7 +9,7 @@ import {
   Eye,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const About = () => {
   return (
     <section
@@ -85,9 +85,11 @@ const About = () => {
         </div>
 
         <div className="flex justify-center pt-6">
+        <Link href="/Intro">
           <Button className="bg-green-800 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm">
             Explore SkillSync
           </Button>
+          </Link>
         </div>
       </div>
     </section>

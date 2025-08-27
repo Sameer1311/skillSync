@@ -4,7 +4,7 @@ import { Sparkles, FileText, MessageCircleCode, BarChart3 } from "lucide-react";
 
 const Features = () => {
   return (
-    <section className="w-full py-16 px-6 md:px-20 space-y-12">
+    <section id="features" className="w-full py-16 px-6 md:px-20 space-y-12">
       <div className="text-center space-y-4">
         <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white">
           What SkillSync Offers

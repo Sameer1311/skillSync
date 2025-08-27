@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, FileText, MessageCircleCode, ArrowRight, MoveRight } from "lucide-react";
+import { Sparkles, FileText, MessageCircleCode, ArrowRight, MoveRight, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ const Intro = () => {
 
         <div className="flex flex-col justify-between bg-white dark:bg-zinc-800 rounded-xl shadow-lg p-6 space-y-4">
           <FileText className="text-green-700 dark:text-green-400" size={28} />
-          <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">Resume Analyzer</h3>
+          <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">Resume builder</h3>
           <p className="text-sm text-zinc-600 dark:text-zinc-300">
             Upload your resume and let our AI identify strengths, weaknesses, and optimization tips.
           </p>
@@ -61,9 +61,9 @@ const Intro = () => {
 
       {/* Call To Action */}
       <div className="pt-10">
-        <Link href="/dashboard">
+        <Link href="/">
           <Button className="bg-green-800 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm flex items-center gap-2">
-            Go to Dashboard <ArrowRight size={16} />
+             <ArrowLeft size={16} />Home
           </Button>
         </Link>
       </div>

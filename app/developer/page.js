@@ -30,7 +30,7 @@ const socialLinks = [
   },
   {
     name: "Portfolio",
-    url: "https://sameer106.netlify.app/",
+    url: "https://negisameer.live/",
     icon: <Laptop className="w-5 h-5" />,
   }
 ];

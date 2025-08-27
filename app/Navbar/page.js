@@ -43,12 +43,7 @@ const Navbar = () => {
           >
             Features
           </Link>
-          <Link
-            href="#contact"
-            className="hover:text-blue-600 hover:underline transition duration-200"
-          >
-            Contact
-          </Link>
+         
                   {session?.user ? (
             <>
               <span className="flex items-center text-primary font-pixel">
@@ -101,12 +96,7 @@ const Navbar = () => {
           >
             Features
           </Link>
-          <Link
-            href="#contact"
-            className="w-full text-center py-2 border-b hover:text-blue-600 hover:underline transition"
-          >
-            Contact
-          </Link>
+         
                 <div className="md:hidden flex items-center gap-2 space-x-4">
           {session?.user && (
             <span className="font-pixel text-blue-500">
