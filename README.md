@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SkillSync – AI-Powered Career Platform
 
-## Getting Started
+SkillSync helps developers prepare for jobs in one place: build a resume, practise interviews with AI, and test their skills with generated quizzes.
 
-First, run the development server:
+**Live demo:** https://skillsync106.netlify.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+- **AI resume builder** with a multi-step form, live preview and PDF export
+- **AI interview prep** that asks role-specific questions and gives feedback (OpenAI / Gemini)
+- **AI quiz generator** for any tech topic
+- **Accounts** with sign-up and login (NextAuth, hashed passwords, MongoDB)
+- **Dark and light mode**, responsive on mobile
+
+## Tech stack
+Next.js (App Router) · React · Tailwind CSS · MongoDB + Mongoose · NextAuth · OpenAI API · Google Gemini · LangChain · Framer Motion
+
+## Project structure
+```
+app/
+  Resume_Builder/        resume form + preview
+  Aiprep/                AI interview practice
+  api/ai-interview/      interview API route
+  api/generate-quiz/     quiz API route
+  api/auth/              NextAuth
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run locally
+```bash
+git clone https://github.com/Sameer1311/skillSync.git
+cd skillSync
+npm install
+# add your MongoDB URI, NextAuth secret and OpenAI / Gemini keys to .env.local
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+**Sameer Negi** – Full-stack developer · [negisameer.live](https://negisameer.live) · [LinkedIn](https://linkedin.com/in/Sameer1311)
